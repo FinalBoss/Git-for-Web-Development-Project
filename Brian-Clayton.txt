@@ -1,0 +1,76 @@
+ 1. What is Semantic HTML?   Semantic markup is basically html that is readable to both the computer and the developer that reads it.  For instance, instead of using just <div> which is very vague, you can add <section>, <p>, <head>,<title>, etc which are much more understandable.  Using such tags gives meaning to the html code making it easier for others to understand, you may even save time commenting every section (or at least making the comments less in volume).
+
+    2. What is HTML used for?  HTML is the blueprint for a website.  It is the foundation of what makes things visible through your computer screen. 
+    3. What is an attribute and where do we put it? An attribute is a markup element within the start of an html tag that provides further information about that tag.  Src and href are common attributes used in html.
+    4. What is the h1 tag used for? How many times should I use it on a page?  h1 is a heading on a webpage and is recognized as the most important highlight for a particular line of text.  It should be the first thing the viewer of a website catches a hold of, therefore it should only be used once.  Least important headings are followed by h2, h3, h4 and so on.
+    5. Name two tags that have required attributes :  <image> and <a> tags both require attributes.
+    6. What do we put in the head of our HTML document?   We put information about the website document such as the title, metadata (used in search engines), style tag for css and external links using the link tag.
+    7. What is an id? An id is a special tool put in tags to add specific changes using javascript and css.
+    8. What elements can I add an id to? Links and anchors
+    9. How many times can I use the same id on a page? only once. 
+    10. What is a class? A class is an attribute that is used to group together tags with similar styles and functions.
+    11. What elements can I add a class to? Class can be used on any html element.
+    12. How many times can I use the same class on a page?  As many times as needed.
+    13. How do I get my link to open in a new tab? <a href="..." target="_blank"></a>
+    14. What is the alt attribute used for? alt is used for images when that image is no longer available for somereason.  It will replace the faulty image with a text that describes what is supposed to be there.
+    15. How do I reference an id? the "#" symbol
+    16. What is the difference between a section and a div?  A section defines a separation of content within an html document, div can mean the same thing, but is more vague and flexible in the sense that it can be interpreted in otherways depending on its attributes and what other tags are related to it.
+    17. What is CSS used for? It is used to give a webpage a unique feel and design.
+    18. How to we select an element? Example - every h2 on the page
+h2 {}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one.  A class can be used multiple times for each and every element, an id is more reserved and can only be used for one element.  You'd use Id to bookmark a link to a section of a webpage for example, while class can be used to style a series of paragraphs in a way that is less strenuous and adheres to the DRY principles.
+    20. How do we select classes in CSS?
+.(class) {}
+
+    21. How do we select a p element with a single class of “human””?
+.human {}
+
+    22. What is a parent child selector? When would this be useful?   To be more specific, it is called a element>element selector concept since there is no real such thing as a parent selector in css (yet?).  Anyways, element>element selection uses one tag that is associated with another tag and declares that certain rules be used on the 'child' tag.  So long as the element associated with the other has a css rule that declares their relationship, only the child of that element will be manipulated.  Even if that child has relatives outside of the relationship, only that child can have the specified changes.  
+
+This is useful when you have a webpage that has the same element, but you want different changes to be done to that element depending on the circumstances.  A class could be used in that respect, but its nice to have this option I suppose. 
+
+    23. How do you select all links within a div with the class of sidebar?
+
+div .sidebar{}
+
+
+    24. What is a pseudo selector? A pseudo selector creates an event from an element once feedback from a user is made.  For example, the pseudo selector "hover" creates an effect once a user hovers over the element with a mouse.
+    25. What do we use the change the spacing between lines? Use the line-height property.
+    26. What do we use to change the spacing between letters?  Use the letter-spacing property
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize? use the text-transform property.
+    28. How do I add a 1px border around my div that is dotted and black?
+
+div { border: 1px dotted black;}
+
+    29. How do I select everything on the page?  "*"
+    30. How do I write a comment in CSS? /*  comment */
+    31. How do I find out what file I am in, when I am using the command line? pwd
+    32. Using the command line - how do I see a list of files/folders in my current folder? ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? git rm.  It's risky to remove a file this way because it doesn't save the deleted file or give warning about the procedure.
+    34. Why should I use version control?  Version control is important to use in order to be able to roll back to a previous version of a app or doc when you need to, create branches in order to test out new directions for your code, and to collaborate with others thus allowing yourself and them to contribute to changes.
+    35. How often should I commit to github?  As often as possible, at least a 15 minute interval if not when necessary.
+    36. What is the command we would use to push our repo up to github? git push
+    37. Walk me through Lambda's git flow. 
+
+I fork my own version of a Repo
+I will add my TL as a contributor
+I will clone the Repo
+I will create a branch using it to make my own version of the source (git checkout -b 'firstname-lastname.txt')
+I will then submit my PR into the new branch.
+My branch will be my base which will be compared to with other branches.
+My TL will be the reviewer of my PR.
+The TL will count the homework as done by subitting it to the source.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?  An inline element does not start on a separate line and take up space, but a block element does.
+    2. What happens when an element is positioned absolutely?  When an element is positioned absolutely, it takes up space in relation to its closest parent that has a position value.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? Use CSS on a div element and create a property called max-width.  Also set the margin to auto.  max-width keeps the element from spreading outside of its container, while auto margin keeps it centered horizontally within the container.
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default.  
+Block: <address><article>
+Inline: <a><abbr>
+inline-block: <img>
+    5. In your own words, explain the box model. What is the fix for the box model? 
+
+The box model is the design where you have a document with the following elements in order: Position, Margin, Border, Padding.  The problem lies with margin and padding causing the containers within the box to overlap.  box-sizing:border-box is known to be the fix.  Since it includes padding and margins in an element's width, it'll distribute the correct proportions to make the container look good from all aspects.
