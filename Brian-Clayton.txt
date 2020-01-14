@@ -2,7 +2,7 @@
 
     2. What is HTML used for?  HTML is the blueprint for a website.  It is the foundation of what makes things visible through your computer screen. 
     3. What is an attribute and where do we put it? An attribute is a markup element within the start of an html tag that provides further information about that tag.  Src and href are common attributes used in html.
-    4. What is the h1 tag used for? How many times should I use it on a page?  h1 is a heading on a webpage and is recognized as the most important highlight for a particular line of text.  It should be the first thing the viewer of a website catches a hold of, therefore it should only be used once.  Least important headings are followed by h2, h3, h4 and so on.
+    4. What is the h1 tag used for? How many times should I use it on a page?  h1 is a heading on a webpage and is recognized as the most important highlight for a particular line of text.  It should be the first thing the viewer of a website catches a hold of, and one of the main headlines for a search engine.  It can theoretically be used more than once.  Least important headings are followed by h2, h3, h4 and so on.
     5. Name two tags that have required attributes :  <image> and <a> tags both require attributes.
     6. What do we put in the head of our HTML document?   We put information about the website document such as the title, metadata (used in search engines), style tag for css and external links using the link tag.
     7. What is an id? An id is a special tool put in tags to add specific changes using javascript and css.
@@ -23,8 +23,8 @@ h2 {}
     20. How do we select classes in CSS?
 .(class) {}
 
-    21. How do we select a p element with a single class of “human””?
-.human {}
+    21. How do we select a p element with a single class of ï¿½humanï¿½ï¿½?
+p .human {}
 
     22. What is a parent child selector? When would this be useful?   To be more specific, it is called a element>element selector concept since there is no real such thing as a parent selector in css (yet?).  Anyways, element>element selection uses one tag that is associated with another tag and declares that certain rules be used on the 'child' tag.  So long as the element associated with the other has a css rule that declares their relationship, only the child of that element will be manipulated.  Even if that child has relatives outside of the relationship, only that child can have the specified changes.  
 
