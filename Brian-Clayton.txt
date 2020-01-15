@@ -74,3 +74,5 @@ inline-block: <img>
     5. In your own words, explain the box model. What is the fix for the box model? 
 
 The box model is the design where you have a document with the following elements in order: Position, Margin, Border, Padding.  The problem lies with margin and padding causing the containers within the box to overlap.  box-sizing:border-box is known to be the fix.  Since it includes padding and margins in an element's width, it'll distribute the correct proportions to make the container look good from all aspects.
+
+Link to codepen: https://codepen.io/finalboss/pen/MWYYbPM
